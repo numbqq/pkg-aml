@@ -21,7 +21,7 @@
 APP=Kodi
 prefix="/usr"
 exec_prefix="/usr"
-bindir="${exec_prefix}/bin"
+bindir="/usr/bin"
 bin_name=kodi
 APP="${bindir}/${bin_name} --standalone $@"
 
@@ -34,6 +34,7 @@ else
     XBMC="$PULSE_SESSION $XBMC"
   fi
 fi
+
 
 LOOP=1
 CRASHCOUNT=0
